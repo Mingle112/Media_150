@@ -1,1 +1,0 @@
-GitHub Pages fix: Upload ALL files from this folder to the same root directory in your GitHub repository. Replace index.html, projects.html, readings.html, style.css and script.js. Image paths now match flat file placement. File names are case sensitive.
