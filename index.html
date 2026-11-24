@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="readings.html">Writing Reflections</a>
+  </nav>
+  <main><h1 id="welcome">WELCOME!</h1><section class="about"><h2>About Me</h2><div class="statement"><p>As a consumer of modern-day short-form information, I want to create a connected series of digital illustrations and photography inspired by our growing addiction to social media and short-form content, such as Instagram Reels and TikTok. I also want to focus on how we rely on entertainment platforms for information, where misinformation and disinformation can easily spread and influence what people believe.</p><p>My work will combine symbolic painting compositions with contemporary elements of social media and online information, such as phones, screens, and social media content. I want the series to reflect the position we are in as consumers of digital media and how constantly consuming online information can influence our views and make it difficult to know what is reliable. Through my work, I want to show how social media can influence the information we receive and the way we understand the world around us.</p></div></section><section class="work"><h2>Gallery</h2><div class="gallery"><figure><img src="images/ladder.jpg" alt="Ladder" onclick="openImage(this)" tabindex="0" onkeydown="if(event.key==='Enter')openImage(this)"><figcaption>Ladder</figcaption></figure><figure><img src="images/recycling.jpg" alt="Recycling" onclick="openImage(this)" tabindex="0" onkeydown="if(event.key==='Enter')openImage(this)"><figcaption>Recycling</figcaption></figure><figure><img src="images/clown.jpg" alt="Photomontage 1" onclick="openImage(this)" tabindex="0" onkeydown="if(event.key==='Enter')openImage(this)"><figcaption>Photomontage 1</figcaption></figure><figure><img src="images/wedding.jpg" alt="Photomontage 2" onclick="openImage(this)" tabindex="0" onkeydown="if(event.key==='Enter')openImage(this)"><figcaption>Photomontage 2</figcaption></figure><figure><img src="images/eyes.gif" alt="Eyes Animation" onclick="openImage(this)" tabindex="0" onkeydown="if(event.key==='Enter')openImage(this)"><figcaption>Eyes Animation</figcaption></figure><figure><img src="images/snowangel.gif" alt="Snow Angel Animation" onclick="openImage(this)" tabindex="0" onkeydown="if(event.key==='Enter')openImage(this)"><figcaption>Snow Angel Animation</figcaption></figure></div><p class="center"><a class="simple-link" href="projects.html">View All Projects</a></p></section></main>
+  <div id="lightbox" onclick="closeImage()" role="dialog" aria-label="Enlarged artwork" aria-modal="true">
+    <button class="close" onclick="closeImage()" aria-label="Close image">&times;</button>
+    <img id="large-image" alt="Enlarged artwork">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

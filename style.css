@@ -1,0 +1,34 @@
+* { box-sizing: border-box; }
+body { margin: 0; background-image: url('IMG_0019.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; font-family: fantasy; color: white; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 350px; background-color: #3d929a; padding: 15px; }
+nav a { color: white; text-decoration: none; font-size: 25px; }
+nav a:hover { color: rgb(230, 221, 173); }
+#welcome { min-height: 85vh; margin: 0; display: flex; align-items: center; justify-content: center; font-size: 80px; text-align: center; }
+h2 { font-size: 45px; text-align: center; }
+.about { padding: 40px 20px 90px; }
+.statement { max-width: 800px; margin: 30px auto; padding: 24px; font-family: Arial, sans-serif; font-size: 18px; line-height: 1.8; text-align: center; background: rgba(0,0,0,.45); border-radius: 8px; }
+.statement p { margin-bottom: 25px; }
+.work { padding: 40px 20px 90px; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1150px; margin: 30px auto; }
+.gallery figure { margin: 0; text-align: center; }
+.gallery img { display: block; width: 100%; height: 250px; object-fit: contain; border-radius: 8px; cursor: pointer; }
+.gallery img:hover { opacity: .85; }
+figcaption { margin-top: 8px; font-family: Arial, sans-serif; font-size: 15px; }
+.center { text-align: center; }
+.simple-link { color: white; font-family: Arial, sans-serif; font-size: 18px; }
+.page-title { font-size: 65px; text-align: center; margin: 90px 20px 20px; }
+.intro { font: 18px/1.7 Arial, sans-serif; text-align: center; margin: 0 20px 65px; }
+.project-section { padding: 15px 20px 55px; }
+.project-section h2 { font-size: 38px; }
+.project-section > p { text-align: center; font: 25px Arial, sans-serif; }
+.pdf-viewer { display: block; width: min(100%, 900px); height: 560px; margin: 25px auto; border: 2px solid white; background: white; }
+.reading-list { max-width: 850px; margin: auto; padding: 0 20px 80px; }
+.reflection { margin: 30px 0; padding: 24px; background: rgba(0,0,0,.45); border-radius: 8px; }
+.reflection h2 { font-size: 28px; text-align: left; }
+.reflection p { font: 18px/1.8 Arial, sans-serif; }
+.placeholder { color: #eee; }
+#lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.94); align-items: center; justify-content: center; z-index: 100; padding: 30px; }
+#large-image { max-width: 95%; max-height: 90vh; object-fit: contain; }
+.close { position: absolute; right: 25px; top: 15px; border: 0; background: none; color: white; font-size: 45px; cursor: pointer; }
+@media (max-width: 700px) { nav { gap: 20px; } nav a { font-size: 16px; } #welcome { font-size: 48px; } .page-title { font-size: 46px; } .gallery { grid-template-columns: repeat(2, 1fr); } .gallery img { height: 180px; } h2 { font-size: 36px; } }
+@media (max-width: 420px) { .gallery { grid-template-columns: 1fr; } }
